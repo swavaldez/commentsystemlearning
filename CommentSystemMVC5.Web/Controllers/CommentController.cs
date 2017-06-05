@@ -23,6 +23,8 @@ namespace CommentSystemMVC5.Web.Controllers
         {
 
             var comment = commentService.SubmitComment(1, "This is a test comment", 0, 313131);
+            comment.CommentText = "This is a second test.";
+            
 
             return View();
             
